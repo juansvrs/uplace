@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body class="cuerpo">
+
+
+
+    <header class="header">
+        <div class="conteiner nav-conteiner">
+
+            <img class="logo" src="img/uPlaceLogo.png" alt="logotipo">
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="login.html">Iniciar sesion</a></li>
+                    <li><a href="registro.html">Registrate</a></li>
+
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu"
+                                width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="4" y1="8" x2="20" y2="8" />
+                                <line x1="4" y1="16" x2="20" y2="16" />
+                            </svg></a>
+                        <ul class="menu_vertical">
+                            <li> <a href="vistavendedor.html">Montar Tienda </a></li>
+                            <li> <a href="vistavendedor.html">Ofrecer Servicios </a></li>
+                            <li> <a href="vistavendedor.html">Opciones de vendedor </a></li>
+
+                        </ul>
+
+
+
+
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="conetendorFiltro">
+
+        <div class="botonTiendas">
+            <h1>Tiendas</h1>
+        </div>
+
+        <div class="botonServicios">
+            <h1>Servicios</h1>
+
+        </div>
+
+    </section>
+
+
+
+    <h1 style="text-align:center"> Lista de X en la universidad Y</h1>
+
+
+    <div class="contenedorTiendas">
+        <div class="productos">
+            <div class="tienda">
+                <h2 class="nombre">Tienda 1</h2>
+                <img src="img/eia.png" class="tienda-img">
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident aliquam quisquam
+                    corporis temporibus sint facere molestiae excepturi, soluta impedit laudantium.</p>
+                <a href="#" class="popup-btn">VER MAS</a>
+            </div>
+            <div class="popup-view">
+                <div class="popup">
+                    <a><i class="fa-solid fa-xmark close-btn"></i></a>
+                    <div class="tienda-img">
+                        <img src="img/eia.png">
+                    </div>
+                    <div class="info">
+                        <h2 class="nombre">Perritos el mono</h2>
+                        <h3 class="disponibilidad">ABIERTO</h3>
+                        <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="productos">
+            <div class="tienda">
+                <h2 class="nombre">Tienda 2</h2>
+                <img src="img/eia.png" class="tienda-img">
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident aliquam quisquam
+                    corporis temporibus sint facere molestiae excepturi, soluta impedit laudantium.</p>
+                <a href="#" class="popup-btn">VER MAS</a>
+            </div>
+            <div class="popup-view">
+                <div class="popup">
+                    <a><i class="fa-solid fa-xmark close-btn"></i></a>
+                    <div class="tienda-img">
+                        <img src="img/eia.png">
+                    </div>
+                    <div class="info">
+                        <h2 class="nombre">Perritos el mono</h2>
+                        <h3 class="disponibilidad">ABIERTO</h3>
+                        <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.</p>
+                        <h3>Productos</h3>
+                        <div class="contenedor-Productos">
+                            <img src="http://placekitten.com/g/120/120" alt="">
+                            <img src="http://placekitten.com/g/121/120" alt="">
+                        </div>
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="productos">
+            <div class="tienda">
+                <h2 class="nombre">Tienda 3</h2>
+                <img src="img/eia.png" class="tienda-img">
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident aliquam quisquam
+                    corporis temporibus sint facere molestiae excepturi, soluta impedit laudantium.</p>
+                <a href="#" class="popup-btn">VER MAS</a>
+            </div>
+            <div class="popup-view">
+                <div class="popup">
+                    <a><i class="fa-solid fa-xmark close-btn"></i></a>
+                    <div class="tienda-img">
+                        <img src="img/eia.png">
+                    </div>
+                    <div class="info">
+                        <h2 class="nombre">Perritos el mono</h2>
+                        <h3 class="disponibilidad">ABIERTO</h3>
+                        <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var popupviews = document.querySelectorAll(".popup-view");
+        var popupBtns = document.querySelectorAll(".popup-btn");
+        var closeBtn = document.querySelectorAll(".close-btn");
+
+        var popup = function (popupClick) {
+            popupviews[popupClick].classList.add("active");
+        }
+        popupBtns.forEach((popupBtns, i) => {
+            popupBtns.addEventListener("click", () => {
+                popup(i)
+            });
+        });
+        closeBtn.forEach((closeBtn) => {
+            closeBtn.addEventListener("click", () => {
+            popupviews.forEach((popupview)=>{
+                popupview.classList.remove("active");
+            });
+            });
+        });
+    </script>
+
+
+
+</body>
+
+
+
+
+</html>
