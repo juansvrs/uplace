@@ -25,22 +25,31 @@
       
       <main class="login">
         <div class="conteiner">
-          <div class="formulario">
+          <form class="formulario" action="index.html" method="post" name="form" onsubmit="return validated()">
+
+
             <h1>
               Iniciar sesión
             </h1>
+
             <div class="input-contenedor">
-              <input type="text" placeholder="Nombre">
+              <input type="text" autocomplete="off" placeholder="correo" name="email">
             </div>
+            <div id="email_error" >Porfavor llene el campo para el correo electronico</div>
+
             <div class="input-contenedor">
-              <input type="password" placeholder="Contraseña">
+              <input type="password" placeholder="Contraseña" name="password">
+              
             </div>
+            <div id="pass_error">por favor ingrese contraseña</div>
             <input type="submit" value="Ingresar" class="button">
-          </div>
+          </form>
+
+
         </div>
         </div>
       </main>
-      <!-- cambio-->
       <footer>Contactanos</footer>
+      <script src="valid.js"></script>
 </body>
 </html>

@@ -143,19 +143,29 @@ footer {
 .contenedorTiendas{
  
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
   margin: 3rem;
 }
 
-.productos .popup-view .popup .info .contenedor-Productos{
+@media (min-width: 768px){
+  .contenedorTiendas{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width: 1080px){
+  .contenedorTiendas{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+/* .productos .popup-view .popup .info .contenedor-Productos{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
   margin: 3rem;
-}
+} */
 
 .tienda{
 
@@ -167,36 +177,21 @@ footer {
 box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.75);
 
 }
-.tienda .tienda-img{
-  /*position:relative;      Sacando error*/
-  
-  margin-left:35%;
-  max-width: 150px;
-}
-.tienda .nombre{
-  color: #000000;
-  /*position: relative;      Sacando error*/
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 1px;
-}
-.tienda .descripcion{
-  padding: 5px 5px;
-  bottom: 30px;
+.tienda{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tienda .popup-btn{
 color: #000000;
 background:#1a2537;
-position: relative;
-bottom: 20px;
-left: 40%;
 font-size: 14px;
 text-transform: uppercase;
 text-decoration: none;
 letter-spacing: 1px;
 padding: 10px 15px;
 border-radius: 20px;
+margin: 1.5rem 0;
 }
 /* POPUP */
 
@@ -221,8 +216,8 @@ border-radius: 20px;
 .productos .popup{
   position: relative;
   display: flex;
-  width: 800px;
-  height: 500px;
+  width: 1200px;
+  height: 800px;
   margin: 20px;  
 }
 .productos .popup .tienda-img{
@@ -522,3 +517,16 @@ width: 100%;
   padding: 1rem;
 }
 
+.formulario #email_error,
+.formulario #pass_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}

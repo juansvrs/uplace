@@ -1,0 +1,45 @@
+{
+    "vendedores" : [
+        {
+            "idVendedor" : 1,
+            "nombre": "Juan luis",
+            "correo": "juanchis2013@gmail.com",
+            "telefono": "3103832425",
+            "instagram": "Programador Web",
+            "facebook": "Programador Web",
+            "password": "123",
+            "u": "Programador Web"
+           
+        },
+        {
+            "idVendedor" : 2,
+            "correo": "juanchis20132@gmail.com",
+            "nombre": "Juan",
+            "telefono": "3103832426",
+            "instagram": "Programador Web",
+            "facebook": "Programador Web",
+            "password": "123",
+            "u": "Programador Web"
+        },
+        {
+            "idVendedor" : 3,
+            "nombre": "Juan",
+            "correo": "juanchis20133@gmail.com",
+            "telefono": "3103832427",
+            "instagram": "Programador Web",
+            "facebook": "Programador Web",
+            "password": "123",
+            "u": "Programador Web"
+        },
+        {
+            "idVendedor" : 4,
+            "nombre": "Juan",
+            "correo": "juanchis20134@gmail.com",
+            "telefono": "3103832428",
+            "instagram": "Programador Web",
+            "facebook": "Programador Web",
+            "password": "123",
+            "u": "Programador Web"
+        }
+    ]
+}
