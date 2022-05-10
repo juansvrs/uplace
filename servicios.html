@@ -50,8 +50,6 @@
     </header>
 
 
-   
-
     <main class="contenedor">
 
         <section class="conetendorFiltro">
@@ -76,21 +74,18 @@
     
     
         <h1 style="text-align:center"> Lista de X en la universidad Y</h1>
-
-
+    
+    
         <div class="grid">
-
             <div class="productos">
-                
+
                 <div class="tienda">
-                    <h2 class="nombre">El Rincon del Buho</h2>
-                    <img class="tienda__imagen"src="img/SandwichRoastbeef.jpg" class="tienda-img">
+                    <h2 class="nombre">Asesorias calculo</h2>
+                    <img class="tienda__imagen" src="https://infolibros.org/wp-content/uploads/2021/07/Libros-de-Calculo-Diferencial.jpg?ezimgfmt=ng%3Awebp%2Fngcb33%2Frs%3Adevice%2Frscb33-1" class="tienda-img">
                     <p class="descripcion">
-                        Vendemos Desde lapiceros hasta sanduches, estamos ubicados debajo de las escaleras del sótano,
-                        Aceptamos Cheques y transferencias, Disponibles 24/7. </p>
+                       Baratas 20mil la hora: instagram=@juansvrs - facebook=juan luis sierra </p>
                     <a href="#" class="popup-btn">VER MAS</a>
                 </div>
-
                 <div class="popup-view">
                     <div class="popup">
                         <a><i class="fa-solid fa-xmark close-btn"></i></a>
@@ -110,15 +105,13 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <div class="productos">
                 <div class="tienda">
-                    <h2 class="nombre">Las grandiosas cosmocookies</h2>
-                    <img class="tienda__imagen" src="img/cosmocookie.jpg" class="tienda-img">
+                    <h2 class="nombre">Asesorias gauss</h2>
+                    <img class="tienda__imagen" src="img/gass.png" class="tienda-img">
                     <p class="descripcion">
-                       Cosmocookies: grandes: $4000, medianas: $3200, pequeñas: $2000.</p>
+                       correo: albertohenao@gmail.com </p>
                     <a href="#" class="popup-btn">VER MAS</a>
                 </div>
     
@@ -134,8 +127,8 @@
                             <p class="descripcion">Comprenme galletas porfavor para poder pagar el transporte de la U.</p>
                             <h3>Productos</h3>
                             <div class="contenedor-Productos">
-                                <img class="tienda__imagen2" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Galleta_con_trozos_de_chocolate.jpg" alt="cookie">
-                                <img class="tienda__imagen2" src="https://www.elespectador.com/resizer/nM3dRtGmWCEhpAGfOwX0WJOin2Y=/525x350/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/UISY3JFND5AABPDPM66DOW6HJ4.jpg" alt="cookie">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Galleta_con_trozos_de_chocolate.jpg" alt="cookie">
+                                <img src="https://www.elespectador.com/resizer/nM3dRtGmWCEhpAGfOwX0WJOin2Y=/525x350/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/UISY3JFND5AABPDPM66DOW6HJ4.jpg" alt="cookie">
                             </div>
     
                         </div>
@@ -143,58 +136,13 @@
                     </div>
                 </div>
             </div>
-    
-            <div class="productos">
-
-                <div class="tienda">
-                    <h2 class="nombre">Bownies melcochudos de SUSY</h2>
-                    <img class="tienda__imagen" src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2021/09/receta-de-brownie-economico.jpg" class="tienda-img">
-                    <p class="descripcion">
-                       Hola me llamo susana y soy de ingenieia administrativa, hago estos brownies con mi mamá en las noches... son deliciosos.</p>
-                    <a href="#" class="popup-btn">VER MAS</a>
-                </div>
-                <div class="popup-view">
-                    <div class="popup">
-                        <a><i class="fa-solid fa-xmark close-btn"></i></a>
-                        <div class="tienda-img">
-                            <img src="img/eia.png">
-                        </div>
-                        <div class="info">
-                            <h2 class="nombre">Bownies melcochudos de SUSY</h2>
-                            <h3 class="disponibilidad">ABIERTO</h3>
-                            <p class="descripcion">Todos a 3k la buena comprenme</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-
 
     </main>
 
-    
-    <script>
-        var popupviews = document.querySelectorAll(".popup-view");
-        var popupBtns = document.querySelectorAll(".popup-btn");
-        var closeBtn = document.querySelectorAll(".close-btn");
+   
 
-        var popup = function (popupClick) {
-            popupviews[popupClick].classList.add("active");
-        }
-        popupBtns.forEach((popupBtns, i) => {
-            popupBtns.addEventListener("click", () => {
-                popup(i)
-            });
-        });
-        closeBtn.forEach((closeBtn) => {
-            closeBtn.addEventListener("click", () => {
-            popupviews.forEach((popupview)=>{
-                popupview.classList.remove("active");
-            });
-            });
-        });
-    </script>
+    
+    
 
 
 
